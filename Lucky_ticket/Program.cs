@@ -12,7 +12,7 @@ namespace Lucky_ticket
                 Console.WriteLine("Enter your ticket number");
                 string text = Console.ReadLine();
                 bool isInt = int.TryParse(text, out int mark);
-                if (!isInt)
+                if (!isInt || int.Parse(text) < 0)
                 {
                     Console.WriteLine("No ticket number is found. Please try again");
                     continue;
