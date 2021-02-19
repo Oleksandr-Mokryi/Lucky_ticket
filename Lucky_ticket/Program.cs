@@ -7,9 +7,9 @@ namespace Lucky_ticket
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter your ticket number");
             while (true)
             {
+                Console.WriteLine("Enter your ticket number");
                 string text = Console.ReadLine();
                 bool isInt = int.TryParse(text, out int mark);
                 if (!isInt)
